@@ -1,0 +1,10 @@
+services:
+  my-app:  # Name of your service
+    image: my-app  # Use the image you built
+    build: .  # Build the image from the Dockerfile in the current directory
+    ports:
+      - "3000:80"  # Map port 80 in the container to port 3000 on the host
+    environment:
+      - NODE_ENV=production  # You can specify environment variables here if needed
+
+
